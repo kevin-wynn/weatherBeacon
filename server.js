@@ -53,8 +53,32 @@ function getWeatherConditions(callback){
           });
         }
 
+        // condition = 'Drizzle';
+        // condition = 'Rain';
+        // condition = 'Mist';
+        // condition = 'Fog';
+        // condition = 'Fog Patches';
+        // condition = 'Rain Mist';
+        // condition = 'Rain Showers';
+        // condition = 'Thunderstorms';
+        // condition = 'Thunderstorms and Rain';
+        // condition = 'Freezing Drizzle';
+        // condition = 'Freezing Rain';
+        // condition = 'Freezing Fog';
+        // condition = 'Patches of Fog';
+        // condition = 'Partial Fog';
+        // condition = 'Shallow Fog';
+        // condition = 'Overcast';
+        // condition = 'Mostly Cloudy';
+
         // a few overriding weather patterns take priority like rain, snow, etc since those don't last forever
         // if its raining
+        if(condition === 'Drizzle' || 'Rain' || 'Mist' || 'Fog' || 'Fog Patches' || 'Rain Mist' || 'Rain Showers' || 'Thunderstorms' || 'Thunderstorms and Rain' || 'Freezing Drizzle' || 'Freezing Rain' || 'Freezing Fog' || 'Patches of Fog' || 'Partial Fog' || 'Shallow Fog' || 'Overcast' || 'Mostly Cloudy') {
+          PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
+            if(err) throw(err)
+            console.log('changing led lights');
+          });
+        }
 
         // if its snowing (fat chance in austin)
 
