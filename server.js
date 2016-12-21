@@ -20,6 +20,11 @@ function getWeatherConditions(callback){
         console.log('Temp: ', temp);
         console.log('Conditions: ', condition);
 
+        temp = 20;
+        // temp = 40;
+        // temp = 60;
+        // temp = 100;
+
         // figure out what color to change leds to based on temp outside and conditions
         // anything lower than 30 degrees f
         if (temp <= 30) {
