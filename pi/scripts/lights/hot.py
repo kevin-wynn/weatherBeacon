@@ -1,6 +1,7 @@
 from sense_hat import SenseHat
 
 sense = SenseHat()
+sense.clear()
 
 r = [255,0,0]
 o = [255,100,10]

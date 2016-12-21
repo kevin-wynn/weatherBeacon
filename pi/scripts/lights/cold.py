@@ -1,6 +1,7 @@
 from sense_hat import SenseHat
 
 sense = SenseHat()
+sense.clear()
 
 c = [100,250,250]
 
