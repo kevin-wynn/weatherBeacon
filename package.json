@@ -1,0 +1,16 @@
+{
+  "name": "weather-beacon",
+  "version": "1.0.0",
+  "description": "Weather beacon to control the pi's lighting",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Wynn",
+  "license": "ISC",
+  "dependencies": {
+    "forever-monitor": "^1.7.1",
+    "python-shell": "^0.4.0",
+    "wundergroundnode": "^0.10.0"
+  }
+}
