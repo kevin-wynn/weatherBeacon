@@ -3,8 +3,8 @@ from sense_hat import SenseHat
 sense = SenseHat()
 sense.clear()
 
-o = [25,100,140]
-c = [0,255,255]
+o = [150,165,190]
+c = [25,100,140]
 
 image = [
     o,c,o,c,o,c,o,c,
