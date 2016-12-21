@@ -75,85 +75,21 @@ function getWeatherConditions(callback){
         // if its raining
         switch(condition) {
           case 'drizzle':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'rain':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'mist':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'fog':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'fog patches':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'rain mist':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'rain showers':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'thunderstorms':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'thunderstorms and rain':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'freezing drizzle':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'freezing rain':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'freezing fog':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'patches of fog':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'partial fog':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'shallow fog':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'overcast':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
-              if(err) throw(err)
-              console.log('changing led lights');
-            });
           case 'mostly cloud':
             PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
               if(err) throw(err)
