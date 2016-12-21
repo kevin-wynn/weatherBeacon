@@ -20,17 +20,12 @@ function getWeatherConditions(callback){
         console.log('Temp: ', temp);
         console.log('Conditions: ', condition);
 
-        temp = 20;
-        // temp = 40;
-        // temp = 60;
-        // temp = 100;
-
         // figure out what color to change leds to based on temp outside and conditions
         // anything lower than 30 degrees f
         if (temp <= 30) {
           PythonShell.run('./pi/scripts/lights/cold.py', function(err) {
             if(err) throw(err)
-            console.log('finished');
+            console.log('changing led lights');
           });
         }
 
@@ -38,7 +33,7 @@ function getWeatherConditions(callback){
         if (temp > 30 && temp <= 50) {
           PythonShell.run('./pi/scripts/lights/cool.py', function(err) {
             if(err) throw(err)
-            console.log('finished');
+            console.log('changing led lights');
           });
         }
 
@@ -46,7 +41,7 @@ function getWeatherConditions(callback){
         if (temp > 50 && temp <= 70) {
           PythonShell.run('./pi/scripts/lights/warm.py', function(err) {
             if(err) throw(err)
-            console.log('finished');
+            console.log('changing led lights');
           });
         }
 
@@ -54,7 +49,7 @@ function getWeatherConditions(callback){
         if (temp > 70) {
           PythonShell.run('./pi/scripts/lights/hot.py', function(err) {
             if(err) throw(err)
-            console.log('finished');
+            console.log('changing led lights');
           });
         }
 
