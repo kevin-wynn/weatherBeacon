@@ -53,23 +53,7 @@ function getWeatherConditions(callback){
           });
         }
 
-        // condition = 'Drizzle';
-        // condition = 'Rain';
-        // condition = 'Mist';
-        // condition = 'Fog';
-        // condition = 'Fog Patches';
-        // condition = 'Rain Mist';
-        // condition = 'Rain Showers';
-        // condition = 'Thunderstorms';
-        // condition = 'Thunderstorms and Rain';
-        // condition = 'Freezing Drizzle';
-        // condition = 'Freezing Rain';
-        // condition = 'Freezing Fog';
-        // condition = 'Patches of Fog';
-        // condition = 'Partial Fog';
-        // condition = 'Shallow Fog';
-        // condition = 'Overcast';
-        // condition = 'Mostly Cloudy';
+        condition.toLowerCase();
 
         // a few overriding weather patterns take priority like rain, snow, etc since those don't last forever
         // if its raining
