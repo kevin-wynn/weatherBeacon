@@ -3,7 +3,7 @@ from sense_hat import SenseHat
 sense = SenseHat()
 sense.clear()
 
-o = [150,165,190]
+o = [25,125,125]
 c = [0,255,255]
 
 image = [
