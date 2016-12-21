@@ -4,7 +4,7 @@ sense = SenseHat()
 sense.clear()
 
 c = [100,250,250]
-b = [70,200,225]
+b = [0,0,255]
 
 image = [
     c,c,c,c,c,c,c,b,
