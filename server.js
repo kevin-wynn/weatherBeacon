@@ -23,7 +23,7 @@ function getWeatherConditions(callback){
         // figure out what color to change leds to based on temp outside and conditions
         // anything lower than 30 degrees f
         if (temp <= 30) {
-          PythonShell.run('./pi/scripts/lights/cold.py', function(err) {
+          PythonShell.run('cold.py', function(err) {
             if(err) throw(err)
             console.log('changing led lights');
           });
@@ -31,7 +31,7 @@ function getWeatherConditions(callback){
 
         // anything between 50 and 30 degrees f
         if (temp > 30 && temp <= 50) {
-          PythonShell.run('./pi/scripts/lights/cool.py', function(err) {
+          PythonShell.run('cool.py', function(err) {
             if(err) throw(err)
             console.log('changing led lights');
           });
@@ -39,7 +39,7 @@ function getWeatherConditions(callback){
 
         // anything from 70 to 50 degrees f
         if (temp > 50 && temp <= 70) {
-          PythonShell.run('./pi/scripts/lights/warm.py', function(err) {
+          PythonShell.run('warm.py', function(err) {
             if(err) throw(err)
             console.log('changing led lights');
           });
@@ -47,7 +47,7 @@ function getWeatherConditions(callback){
 
         // anything above 70 degrees
         if (temp > 70) {
-          PythonShell.run('./pi/scripts/lights/hot.py', function(err) {
+          PythonShell.run('hot.py', function(err) {
             if(err) throw(err)
             console.log('changing led lights');
           });
@@ -75,7 +75,7 @@ function getWeatherConditions(callback){
           case 'shallow fog':
           case 'overcast':
           case 'mostly cloud':
-            PythonShell.run('./pi/scripts/lights/rain.py', function(err) {
+            PythonShell.run('rain.py', function(err) {
               if(err) throw(err)
               console.log('changing led lights');
             });
