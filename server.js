@@ -94,7 +94,7 @@ function getWeatherConditions(callback){
 function refreshConditions(){
   setTimeout(function(){
     getWeatherConditions(refreshConditions);
-  }, 1.8e+6)
+  }, 60000)
 }
 
 // 30 sec = 30000
