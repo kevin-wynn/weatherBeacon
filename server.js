@@ -1,6 +1,6 @@
 // wunderground api and wrapper
 var wunderground = require('wundergroundnode');
-var myKey = '5587929fccc97e43';
+var myKey = '<YOUR KEY HERE>';
 var wunderground = new wunderground(myKey);
 
 // python scripts
